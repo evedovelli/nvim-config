@@ -157,6 +157,7 @@ require("lazy").setup({
   { "rafamadriz/friendly-snippets" },
 
   -- LSP
+  { "nvimtools/none-ls.nvim" },
   { "williamboman/mason.nvim" }, -- simple to use language server installer
   { "williamboman/mason-lspconfig.nvim" },
   { "neovim/nvim-lspconfig" }, -- enable LSP

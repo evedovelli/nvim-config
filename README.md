@@ -1,6 +1,6 @@
 # Neovim Config
 
-Currently used with neovim v0.9.2.
+Currently used with neovim v0.11.2.
 
 Clone the repository into the correct location (make a backup your current `nvim` directory if you want to keep it).
 
