@@ -168,6 +168,9 @@ require("lazy").setup({
     opts = {},
   },
 
+  -- Copilot
+  { "github/copilot.vim" },
+
   -- Misc.
   --{ "famiu/bufdelete.nvim" }, -- Delete buffers without messing with windows
   { "nvim-lua/plenary.nvim" }, -- Useful lua functions used by lots of plugins
