@@ -178,6 +178,7 @@ require("lazy").setup({
   --{ "famiu/bufdelete.nvim" }, -- Delete buffers without messing with windows
   { "nvim-lua/plenary.nvim" }, -- Useful lua functions used by lots of plugins
   { 'nvim-tree/nvim-web-devicons' },
+  { 'echasnovski/mini.nvim', version = '*' },
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
