@@ -1,7 +1,7 @@
 -- Type :help options to view full details on the options
 local options = {
   backup = true,                           -- creates a backup file
-  backupdir = "~/tmp/",                    -- directory with backup files
+  backupdir = "/scratch/users/evedovel/tmp/",                    -- directory with backup files
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   cmdheight = 2,                           -- more space in the neovim command line for displaying messages
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
@@ -18,7 +18,7 @@ local options = {
   splitbelow = true,                       -- force all horizontal splits to go below current window
   splitright = true,                       -- force all vertical splits to go to the right of current window
   swapfile = true,                         -- creates a swapfile
-  directory = "~/tmp/",                    -- directory with swap files
+  directory = "/scratch/users/evedovel/tmp/",                    -- directory with swap files
   termguicolors = true,                    -- set term gui colors (most terminals support this)
   timeoutlen = 300,                        -- time to wait for a mapped sequence to complete (in milliseconds)
   undofile = true,                         -- enable persistent undo
@@ -57,3 +57,9 @@ end
 vim.opt.shortmess:append "c"                           -- don't give |ins-completion-menu| messages
 vim.opt.formatoptions:remove({ "c", "r", "o" })        -- don't insert the current comment leader automatically for auto-wrapping comments using 'textwidth', hitting <Enter> in insert mode, or hitting 'o' or 'O' in normal mode.
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
+
+vim.filetype.add({
+  extension = {
+    hip = "cpp",
+  },
+})

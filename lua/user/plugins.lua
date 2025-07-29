@@ -156,6 +156,9 @@ require("lazy").setup({
   },
   { "rafamadriz/friendly-snippets" },
 
+  -- Copilot AI companion
+  { "github/copilot.vim" },
+
   -- LSP
   { "nvimtools/none-ls.nvim" },
   { "williamboman/mason.nvim" }, -- simple to use language server installer
@@ -252,4 +255,7 @@ require("lazy").setup({
   { "goolord/alpha-nvim" },
   { "psf/black" },
   { "stsewd/isort.nvim" },
+
+  -- Copy to system clipboard
+  { "ojroques/vim-oscyank" }
 })

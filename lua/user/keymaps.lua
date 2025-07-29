@@ -83,4 +83,23 @@ keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Copy to linux primary selection (to paste from primary selection use <Control + Insert>)
-keymap("v", "<leader>y", '"*y', opts)
+-- keymap("v", "<leader>y", '"*y', opts)
+keymap("v", "<leader>y", '"+y', opts)
+keymap("v", "<leader>Y", '"+yg', opts)
+keymap("v", "<leader>yy", '"+yy', opts)
+
+-- Copy to system clipboard from neovim running in WSL
+keymap('v', '<leader>c', '<Plug>OSCYankVisual')
+
+-- Paste from linux primary selection (to copy to primary selection use <leader>y)
+-- keymap("v", "<leader>p", '"*p', opts)
+keymap("v", "<leader>p", '"+p', opts)
+keymap("v", "<leader>P", '"+P', opts)
+keymap("n", "<leader>p", '"+p', opts)
+keymap("n", "<leader>P", '"+P', opts)
+
+-- Copilot
+vim.g.copilot_no_tab_map = true
+keymap('i', '<leader><Right>', 'copilot#Accept("\\<CR>")', {expr=true, replace_keycodes = false})
+keymap('i', '<C-Right>', '<Plug>(copilot-accept-word)')
+keymap('i', '<C-Down>', '<Plug>(copilot-accept-line)')
