@@ -1,7 +1,7 @@
 -- Type :help options to view full details on the options
 local options = {
   backup = true,                           -- creates a backup file
-  backupdir = "/scratch/users/evedovel/tmp/",                    -- directory with backup files
+  backupdir = "/scratch/users/evedovel/tmp/",   -- directory with backup files
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   cmdheight = 2,                           -- more space in the neovim command line for displaying messages
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
@@ -18,7 +18,7 @@ local options = {
   splitbelow = true,                       -- force all horizontal splits to go below current window
   splitright = true,                       -- force all vertical splits to go to the right of current window
   swapfile = true,                         -- creates a swapfile
-  directory = "/scratch/users/evedovel/tmp/",                    -- directory with swap files
+  directory = "/scratch/users/evedovel/tmp/",   -- directory with swap files
   termguicolors = true,                    -- set term gui colors (most terminals support this)
   timeoutlen = 300,                        -- time to wait for a mapped sequence to complete (in milliseconds)
   undofile = true,                         -- enable persistent undo

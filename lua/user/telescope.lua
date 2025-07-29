@@ -77,7 +77,7 @@ telescope.setup {
       },
     },
   },
-  file_ignore_patterns = { "./src/llvm-project*", "~/tmp/*" },
+  file_ignore_patterns = { "./src/llvm-project*" },
   pickers = {
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
