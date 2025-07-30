@@ -35,7 +35,10 @@ keymap("n", "<S-Right>", ":vertical resize +1<CR>", opts)
 keymap("n", ")", ":bnext<CR>", opts)
 keymap("n", "(", ":bprevious<CR>", opts)
 
--- Navigate jumps back
+-- Navigate
+keymap("n", "gd", "<C-]>", opts)
+keymap("n", "]", "<C-]>", opts)
+keymap("n", "gb", "<C-t>", opts)
 keymap("n", "[", "<C-t>", opts)
 
 -- Move text up and down
