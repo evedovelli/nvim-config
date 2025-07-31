@@ -36,10 +36,18 @@ keymap("n", ")", ":bnext<CR>", opts)
 keymap("n", "(", ":bprevious<CR>", opts)
 
 -- Navigate
-keymap("n", "gd", "<C-]>", opts)
 keymap("n", "]", "<C-]>", opts)
-keymap("n", "gb", "<C-t>", opts)
 keymap("n", "[", "<C-t>", opts)
+keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
+keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+keymap("n", "<leader>n", "<cmd>lua vim.diagnostic.jump({count=1, float=true})<cr>", opts)
+keymap("n", "<leader>N", "<cmd>lua vim.diagnostic.jump({count=-1, float=true})<cr>", opts)
+keymap("n", "<leader>lj", "<cmd>lua vim.diagnostic.jump({count=1, float=true})<cr>", opts)
+keymap("n", "<leader>lk", "<cmd>lua vim.diagnostic.jump({count=-1, float=true})<cr>", opts)
+keymap("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
+keymap("n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
+keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
+keymap("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
