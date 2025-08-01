@@ -161,8 +161,6 @@ require("lazy").setup({
 
   -- LSP
   { "nvimtools/none-ls.nvim" },
-  --{ "williamboman/mason.nvim" }, -- simple to use language server installer
-  --{ "williamboman/mason-lspconfig.nvim" },
   { "neovim/nvim-lspconfig" }, -- enable LSP
   { "RRethy/vim-illuminate" },
   {
@@ -255,6 +253,7 @@ require("lazy").setup({
   },
   { "goolord/alpha-nvim" },
   { "psf/black" },
+  { "ruby-formatter/rufo-vim" },
   { "stsewd/isort.nvim" },
 
   -- Copy to system clipboard

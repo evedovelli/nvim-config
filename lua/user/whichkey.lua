@@ -83,6 +83,7 @@ mappings = {
     { "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", desc = "Rename", nowait = true, remap = false },
     { "<leader>ls", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Document Symbols", nowait = true, remap = false },
     { "<leader>lw", "<cmd>Telescope diagnostics<cr>", desc = "Workspace Diagnostics", nowait = true, remap = false },
+    { "<leader>m", "<cmd>Rufo<cr>", desc = "Format Ruby with Rufo", nowait = true, remap = false },
     { "<leader>q", "<cmd>q!<CR>", desc = "Quit", nowait = true, remap = false },
     { "<leader>s", group = "Search", nowait = true, remap = false },
     { "<leader>sC", "<cmd>Telescope commands<cr>", desc = "Commands", nowait = true, remap = false },

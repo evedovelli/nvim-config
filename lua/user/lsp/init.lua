@@ -3,10 +3,6 @@ if not status_ok then
     return
 end
 
-require("user.lsp.handlers").setup()
-require "user.lsp.null-ls"
-require "user.lsp.typescript-tools"
-
 vim.lsp.config('*', {
   capabilities = {
     textDocument = {
@@ -42,3 +38,9 @@ vim.lsp.enable("bashls", {
     filetypes = { "sh", "bash" }
 })
 vim.lsp.enable("dockerls")
+vim.lsp.enable("ruby-lsp")
+
+require("user.lsp.handlers").setup()
+require "user.lsp.null-ls"
+require "user.lsp.typescript-tools"
+require "user.lsp.ruby-lsp"
