@@ -111,6 +111,6 @@ keymap("n", "<leader>P", '"+P', opts)
 
 -- Copilot
 vim.g.copilot_no_tab_map = true
-keymap('i', '<leader>k', 'copilot#Accept("\\<CR>")', {expr=true, replace_keycodes = false})
-keymap('i', '<leader>l', '<Plug>(copilot-accept-word)')
-keymap('i', '<leader>j', '<Plug>(copilot-accept-line)')
+keymap('i', '<A-k>', 'copilot#Accept("\\<CR>")', {expr=true, replace_keycodes = false})
+keymap('i', '<A-l>', '<Plug>(copilot-accept-word)')
+keymap('i', '<A-j>', '<Plug>(copilot-accept-line)')
