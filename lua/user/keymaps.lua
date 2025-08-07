@@ -94,8 +94,8 @@ keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Copy to linux primary selection (to paste from primary selection use <Control + Insert>)
--- keymap("v", "<leader>y", '"*y', opts)
-keymap("v", "<leader>y", '"+y', opts)
+keymap("v", "<leader>y", '"*y', opts)
+-- keymap("v", "<leader>y", '"+y', opts)
 keymap("v", "<leader>Y", '"+yg', opts)
 keymap("v", "<leader>yy", '"+yy', opts)
 
