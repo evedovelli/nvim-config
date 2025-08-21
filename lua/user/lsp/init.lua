@@ -1,4 +1,4 @@
-local status_ok, _ = pcall(require, "lspconfig")
+local status_ok, lspconfig = pcall(require, "lspconfig")
 if not status_ok then
     return
 end
@@ -30,9 +30,17 @@ vim.lsp.enable("lua_ls", {
     },
 })
 vim.lsp.enable("pyright")
-vim.lsp.enable("clangd", {
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+vim.lsp.config('clangd', {
+    cmd = { "clangd",
+            "--path-mappings="..
+              "/projects=/projects,"
+    },
     filetypes = { "c", "cpp", "h", "hpp", "objc", "objcpp", "hip", "cuda" },
+    capabilities = capabilities,
 })
+vim.lsp.enable('clangd')
+
 vim.lsp.enable("bashls", {
     cmd = { "bash-language-server", "start" },
     filetypes = { "sh", "bash" }
